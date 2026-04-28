@@ -1,0 +1,15 @@
+Tema 2
+Listas circulares doblemente enlazadas
+
+Concepto
+
+En una lista circular doble:
+
+ * el último nodo apunta al primero
+ * el primero apunta al último
+
+Ejemplo:
+
+ ┌──────────────┐
+ ↓              ↑
+10 ⇄ 20 ⇄ 30 ⇄ 40

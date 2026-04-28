@@ -1,0 +1,7 @@
+Las operaciones básicas de una pila son:
+
+push(elemento) → agregar al tope
+pop() → sacar el del tope
+peek() → ver el tope sin sacarlo
+isEmpty() → verificar si está vacía
+size() → cantidad de elementos

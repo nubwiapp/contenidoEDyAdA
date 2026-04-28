@@ -1,0 +1,102 @@
+FUNDAMENTOS DE MATRICES
+
+¿Qué es una matriz?
+
+Una matriz es una estructura de datos que organiza elementos en forma de tabla, compuesta por:
+
+Filas (horizontal)
+Columnas (vertical)
+
+Representación: Matriz 3x3
+
+        [ 1  2  3 ]
+        [ 4  5  6 ]
+        [ 7  8  9 ]
+
+Una matriz = arreglo bidimensional
+
+En programación y más concreto en Java se representa así:
+
+            int[][] matriz = new int[3][3];
+
+Índices: matriz[fila][columna]
+
+            matriz[1][2] = 6
+
+
+            [ 1  2  3 ]  ← fila 0
+            [ 4  5  6 ]  ← fila 1
+            [ 7  8  9 ]  ← fila 2
+                    ↑
+                 columna 2
+
+Un error común cuando se empieza a trabajar con matrices, es confundir filas con columnas
+siempre va primero la fila luego la columna
+
+Para recorrer una matriz está esta forma estandar:
+
+            for(int i = 0; i < filas; i++){
+                for(int j = 0; j < columnas; j++){
+                    System.out.print(matriz[i][j] + " ");
+                }
+                System.out.println();
+            }
+
+
+Existen varios tipos de matrices;
+
+1. Matriz cuadrada. Mismo número de filas por columnas: 3x3
+2. Matriz rectangular. filas son diferentes a las columnas: 2x3
+3. Matriz identidad. 1 en la diagonal, 0 en el resto.
+
+                        [1 0 0]
+                        [0 1 0]
+                        [0 0 1]
+
+4.Matriz diagonal. solo la diagonal principal tiene valores.
+
+Conceptos importantes
+
+* Diagonal principal.
+
+        matriz[i][i]
+
+        [ 1  2  3 ]
+        [ 4  5  6 ]
+        [ 7  8  9 ]
+
+        Diagonal → 1, 5, 9
+
+* Diagonal secundaria.
+
+        matriz[i][n - i - 1]
+
+Ejemplo: Diagonal → 3, 5, 7
+
+
+Ejercicios clave para estudiar:
+
+Nivel básico
+
+Imprimir una matriz 3x3
+Mostrar solo la diagonal principal
+Sumar todos los elementos
+
+
+Nivel medio
+
+Sumar cada fila
+Encontrar el número mayor
+Transponer una matriz
+
+
+Nivel avanzado
+
+Verificar si es matriz identidad
+Multiplicación de matrices
+Recorrido en zig-zag
+
+Complejidad
+
+Recorrer una matriz: O(n * m)
+Para matriz cuadrada: O(n²)

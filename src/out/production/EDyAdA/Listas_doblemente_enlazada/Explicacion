@@ -1,0 +1,19 @@
+TALLER – ESTRUCTURAS DE DATOS Y ANÁLISIS DE ALGORITMOS
+
+Tema 1: Listas doblemente enlazadas
+Concepto: Una lista doblemente enlazada es una estructura donde cada nodo tiene dos referencias:
+
+- al nodo siguiente
+- al nodo anterior
+
+Estructura del nodo:
+
+[ anterior | dato | siguiente ]
+
+
+Ejemplo visual: null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 → null
+Ventaja: Podemos recorrer la lista en ambos sentidos.
+
+EJERCICIO 1
+Crear una lista doblemente enlazada e insertar nodos
+Clase Nodo

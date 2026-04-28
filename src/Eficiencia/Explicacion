@@ -1,0 +1,124 @@
+Una operación puede ser:
+
+una suma,
+una comparación,
+una impresión,
+una asignación,
+una iteración del ciclo.
+
+Al inicio no necesitas ser demasiado rígido; lo importante es que entiendan el crecimiento.
+
+Paso 2. Mostrar que O grande no mide tiempo exacto
+
+Qué mide realmente la notación Big-O
+
+La notación Big-O no mide el tiempo real de ejecución.
+
+Es decir, no mide cosas como:
+
+System.nanoTime()
+milisegundos
+segundos
+velocidad del procesador
+
+Porque esos valores dependen de:
+
+el computador
+el lenguaje
+el compilador
+la memoria
+el sistema operativo
+
+Por ejemplo, el mismo algoritmo puede tardar diferente en dos computadores.
+
+Entonces ¿qué mide Big-O?
+Big-O mide cómo crece el número de operaciones del algoritmo cuando crece el tamaño de los datos.
+
+Es decir: cuántas veces el algoritmo debe recorrer o procesar datos.
+
+Big O no dice cuántos segundos exactos tarda
+Big O describe cómo crece el algoritmo cuando n aumenta
+
+Ejemplo:
+
+O(n) crece de forma lineal
+O(n²) crece mucho más rápido
+O(log n) crece lentamente
+Paso 3. Trabajar con valores pequeños
+
+Primero usa:
+
+n = 5
+n = 10
+
+Después:
+
+n = 100
+n = 1000
+
+Así ellos ven la diferencia.
+
+Paso 4. Comparar resultados
+
+Preguntas para hacer en clase:
+
+¿Cuál algoritmo creció más rápido?
+¿Cuál hizo menos operaciones?
+¿Cuál conviene para entradas grandes?
+¿Cuál se vuelve costoso más rápido?
+Ejemplo de análisis verbal para tus estudiantes
+
+Puedes decirlo así:
+
+O(1)
+“El algoritmo no depende del tamaño de entrada.”
+
+O(n)
+“Si la entrada crece, las operaciones crecen en la misma proporción.”
+
+O(n²)
+“Cada elemento se compara o trabaja con todos los demás.”
+
+O(log n)
+“El problema se reduce por mitades.”
+
+O(n log n)
+“Se combina un recorrido lineal con una reducción logarítmica.”
+
+Orden de eficiencia (de mejor a peor)
+
+Este orden es muy usado en análisis de algoritmos:
+
+Complejidad	Nombre
+O(1)	constante
+O(log n)	logarítmica
+O(n)	lineal
+O(n log n)	casi lineal
+O(n²)	cuadrática
+O(n³)	cúbica
+O(2ⁿ)	exponencial
+O(n!)	factorial
+
+
+¿Cuándo aparece O(log n)?
+
+La complejidad logarítmica aparece cuando el problema se divide en partes cada vez más pequeñas.
+
+Es decir, cada paso reduce el tamaño del problema.
+
+Ejemplo típico:
+búsqueda binaria
+árboles binarios balanceados
+algunos algoritmos de divide y vencerás
+
+
+¿Cuándo aparece O(n log n)?
+
+Aparece cuando:
+un algoritmo logarítmico se ejecuta n veces
+O cuando se usa divide y vencerás y luego se combinan resultados.
+
+Ejemplos famosos:
+Merge Sort
+Quick Sort (promedio)
+Heap Sort
